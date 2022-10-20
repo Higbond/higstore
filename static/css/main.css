@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fef3e0;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #6f6f6f;
+    text-decoration: none;
+    transition: color 500ms ease;
+}
+
+a:hover {
+    color: #1f1f1f;
+}
+
+.container {
+    width: 1258px;
+    margin: 0 auto;
+}
+
+header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+header .logo {
+    color: #222;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+header nav a {
+    margin-left: 15px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.courses .course {
+    background: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 30%;
+    color: #fff;
+}
+
+.courses .course img {
+    width: 100%;
+}
+
+.courses .course h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.courses .course a {
+    display: inline-block;
+    padding: 10px 12px;
+    border-radius: 5px;
+    background: #111;
+    color: #fff;
+    transition: transform 500ms ease;
+}
+
+.courses .course a:hover {
+    transform: scale(1.1);
+}
+
+.courses ul {
+    width: 90%;
+    line-height: 170%;
+    margin-left: 7%;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.aside {width: 560px}
+.aside p {margin: 20px 0;}
+
+.presentation {
+    background: #ca5e48;
+    padding: 50px;
+    height: 250px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+}
+
+.presentation h2 {
+    color: #fff;
+    font-size: 35px;
+    padding-top: 40px;
+}
+
+.presentation p {
+    color: #622424;
+    font-size: 16px;
+    padding-top: 6px;
+    max-width: 380px;
+}
+
+.presentation img {
+    float: right;
+    width: 200px;
+    position: relative;
+    top: 20.5px;
+}
+
+.form-section {
+    box-sizing: border-box;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0px 2px 4px 0px rgb(5 5 5 / 5%);
+}
+
+form label {
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+form .helptext {
+    font-size: 13px;
+    display: block;
+    color: #5e5e5e;
+}
+
+.form-section.comment {
+    margin-top: 50px;
+}
+
+.form-section.comment textarea {
+    width: 100%;
+}
+
+form input, form textarea {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 300px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.comment-block {
+    margin-top: 20px;
+    background: #ddcfb6;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form-section button {
+    margin-top: 20px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: 0;
+    background: black;
+    color: #fff;
+    transition: transform 500ms ease;
+    cursor: pointer;
+}
+.form-section button:hover {transform: scale(1.2);}
+hr {margin: 10px 0;}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}

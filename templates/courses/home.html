@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+<div class="presentation container">
+    <img src="https://itproger.com/img/reg_page/man-seating.svg">
+    <h2>Хотите изучить программирование?</h2>
+    <p>Здесь вы найдете крутые курсы по разным направлениям</p>
+</div>
+
+<div class="courses container">
+    {% for el in courses %}
+    <div class="course">
+        {% if el.image %}
+        <img src="{{ el.image.url }}" alt="{{ el.title }}">
+        {% else %}
+        <img src="/pictures/default.png" alt="{{ el.title }}">
+        {% endif %}
+
+        <h3>{{ el.title }}</h3>
+
+        <a href="{{ el.get_absolute_url }}">Смотреть курс</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

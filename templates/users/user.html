@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+  <div class="form-section container">
+    <h2>Авторизация на сайте</h2>
+    <form method="POST">
+      {% csrf_token %}
+      {{ form }}
+      <button type="submit" class="btn btn-outline-warning">Войти</button>
+    </form>
+    <hr>
+    Забыли пароль? <a href="{% url 'pass-reset' %}">Получите новый</a>
+  </div>
+{% endblock main %}

@@ -1,0 +1,31 @@
+<!doctype html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <header class="container">
+        <span class="logo">Higstore</span>
+        <nav>
+            <a href="{% url 'home' %}">Главная</a>
+            <a href="{% url 'tarrifs' %}">Тарифы</a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'profile' %}">Профиль</a>
+            <a href="{% url 'exit' %}">Выйти</a>
+            {% else %}
+            <a href="{% url 'user' %}">Войти</a>
+            <a href="{% url 'reg' %}">Регистрация</a>
+            {% endif %}
+        </nav>
+    </header>
+    {% block main %}
+    {% endblock %}
+    <footer>Все права защищены</footer>
+</body>
+</html>

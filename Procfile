@@ -1,0 +1,1 @@
+web: gunicorn videostore.wsgi

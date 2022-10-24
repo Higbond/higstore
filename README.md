@@ -1,0 +1,2 @@
+# higstore
+# DJANGO SHOPPING WEBSITE

@@ -1,3 +1,3 @@
 # DJANGO SHOPPING WEBSITE
 
-[DJANGO SHOPPING WEBSITE](https://higstore.herokuapp.com/ )
+[Higstore](https://higstore.herokuapp.com/ )
